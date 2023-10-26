@@ -1,0 +1,14 @@
+
+Lc9: Give me a python function to calculate the sum of a sequence of integers.
+SIA: Here is a Python function that calculates the sum of an arithmetic sequence:
+```python
+def sum_arithmetic_sequence(a, n):
+    return (n * (a[0] + a[-1])) / 2
+```
+You can use this function by passing the first and last numbers of the sequence as arguments. The variable `n` should represent the number of terms in the sequence. For example:
+```python
+a = [1, 3, 5, 7]
+n = len(a)
+sum_of_sequence = sum_arithmetic_sequence(a[0], n)
+print(sum_of_sequence)  # Output: 6
+```
